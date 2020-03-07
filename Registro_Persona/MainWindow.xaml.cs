@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Registro_Persona.UI.RegistrarPersona;
+using Registro_Persona.UI.ConsultarPersona;
 
 namespace Registro_Persona
 {
@@ -23,6 +25,18 @@ namespace Registro_Persona
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RegistrarButton_Click(object sender, RoutedEventArgs e)
+        {
+            rPersona r = new rPersona();
+            r.Show();
+        }
+
+        private void ConsultarButton_Click(object sender, RoutedEventArgs e)
+        {
+            cPersona c = new cPersona();
+            c.Show();
         }
     }
 }
