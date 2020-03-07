@@ -22,7 +22,11 @@
         </Grid.RowDefinitions>
         <Label Content="Criterio: " Grid.Row="1" Grid.Column="2"/>
         <TextBox x:Name="CriterioTextBox" Grid.Row="1" Grid.Column="3"/>
-        <Button x:Name="ConsultarButton" Content="Consultar" Grid.Row="1" Grid.Column="4" Click="ConsultarButton_Click"/>
+        <Button x:Name="ConsultarButton" Content="Consultar" Grid.Row="1" Grid.Column="4" HorizontalContentAlignment="Right" Click="ConsultarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/buscar.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
         <DataGrid x:Name="ConsultaDataGrid" Grid.Row="2" Grid.ColumnSpan="6"/>
 
     </Grid>

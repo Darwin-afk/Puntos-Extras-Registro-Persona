@@ -13,18 +13,18 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="20*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="50*"/>
+            <RowDefinition Height="40*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60*"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="20*"/>
             <ColumnDefinition Width="80*"/>
             <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="60*"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="40*"/>
         </Grid.ColumnDefinitions>
         <Label Content="PersonaID: " Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="PersonaIdTextBox" Grid.Row="1" Grid.Column="3">
@@ -42,9 +42,25 @@
                 <Binding Path="Nombres" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay"/>
             </TextBox.Text>
         </TextBox>
-        <Button x:Name="NuevoButton" Content="Nuevo" Grid.Row="5" Grid.Column="1" Click="NuevoButton_Click"/>
-        <Button x:Name="GuardarButton" Content="Guardar" Grid.Row="5" Grid.Column="3" Click="GuardarButton_Click"/>
-        <Button x:Name="EliminarButton" Content="Eliminar" Grid.Row="5" Grid.Column="5" Click="EliminarButton_Click"/>
-        <Button x:Name="BuscarButton" Content="Buscar" Grid.Row="1" Grid.Column="5" Click="BuscarButton_Click"/>
+        <Button x:Name="NuevoButton" Content="Nuevo" Grid.Row="5" Grid.Column="1" HorizontalContentAlignment="Right" Click="NuevoButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/nuevo.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarButton" Content="Guardar" Grid.Row="5" Grid.Column="3" HorizontalContentAlignment="Right" Click="GuardarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/guardar.jpg" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarButton" Content="Eliminar" Grid.Row="5" Grid.Column="5" HorizontalContentAlignment="Right" Click="EliminarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/eliminar.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BuscarButton" Content="Buscar" Grid.Row="1" Grid.Column="5" HorizontalContentAlignment="Right" Click="BuscarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/buscar.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

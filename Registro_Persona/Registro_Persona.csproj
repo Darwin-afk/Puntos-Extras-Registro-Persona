@@ -8,6 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Iconos\buscar.png" />
+    <None Remove="Iconos\eliminar.png" />
+    <None Remove="Iconos\guardar.jpg" />
+    <None Remove="Iconos\nuevo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Iconos\buscar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconos\eliminar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconos\guardar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconos\nuevo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="3.1.2" />
     <PackageReference Include="microsoft.entityframeworkcore.tools" Version="3.1.2">
       <PrivateAssets>all</PrivateAssets>
